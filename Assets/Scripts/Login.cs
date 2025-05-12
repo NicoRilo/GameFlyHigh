@@ -43,8 +43,15 @@ public class Login : MonoBehaviour
 
             if (responseText == "Login successful")
             {
+                PlayerPrefs.SetString("LoggedUser", user);
+                PlayerPrefs.Save();
+                
+                PlayerPrefs.DeleteKey("MaxScoreFromServer");
+
+                FindFirstObjectByType<ScoreUpload>().GetMaxScoreFromServer(user);
+
                 log.text = "Login realizado con éxito";
-                yield return new WaitForSeconds(5f);
+                yield return new WaitForSeconds(2f);
                 SceneManager.LoadScene("Game");
             }
             else
@@ -57,8 +64,4 @@ public class Login : MonoBehaviour
             log.text = $"Error de red: {request.error}";
         }
     }
-}
-
-internal class LoginRequestDTO
-{
 }

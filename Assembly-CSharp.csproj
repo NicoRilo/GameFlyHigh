@@ -59,7 +59,7 @@
     <UnityVersion>6000.0.33f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\TheNicrospro\.vscode-insiders\extensions\visualstudiotoolsforunity.vstuc-1.1.1\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\TheNicrospro\.vscode-insiders\extensions\visualstudiotoolsforunity.vstuc-1.1.2\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="D:\GameDownload\6000.0.33f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="D:\GameDownload\6000.0.33f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="D:\GameDownload\6000.0.33f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
@@ -67,8 +67,13 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\MovePipe.cs" />
     <Compile Include="Assets\Scripts\Login.cs" />
+    <Compile Include="Assets\Scripts\ScoreRequestDTO.cs" />
+    <Compile Include="Assets\Scripts\GameOverManager.cs" />
+    <Compile Include="Assets\Scripts\Score.cs" />
+    <Compile Include="Assets\Scripts\ScoreUpload.cs" />
     <Compile Include="Assets\Scripts\SpawnerPipe.cs" />
     <Compile Include="Assets\Scripts\LoopPlattform.cs" />
+    <Compile Include="Assets\Scripts\ScoreAdd.cs" />
     <Compile Include="Assets\Scripts\FlyPlayer.cs" />
     <Compile Include="Assets\Scripts\LoginRequestDTO.cs" />
   </ItemGroup>

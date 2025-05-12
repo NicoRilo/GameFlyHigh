@@ -14,7 +14,7 @@ public class LoopPlattform : MonoBehaviour
 
     void Update()
     {
-        float newX = startPosistion.x + Mathf.Repeat(Time.time * speed, limit);
+        float newX = startPosistion.x - Mathf.Repeat(Time.time * speed, limit);
         transform.position = new Vector2(newX, transform.position.y);
     }
 }
