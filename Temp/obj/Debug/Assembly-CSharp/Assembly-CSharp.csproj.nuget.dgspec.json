@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\PROYECTO\\GameFlyHigh\\GameFlyHigh\\Assembly-CSharp.csproj": {}
+    "G:\\PROYECTO\\GameFlyHigh\\GameFlyHigh\\Assembly-CSharp.csproj": {}
   },
   "projects": {
-    "F:\\PROYECTO\\GameFlyHigh\\GameFlyHigh\\Assembly-CSharp.csproj": {
+    "G:\\PROYECTO\\GameFlyHigh\\GameFlyHigh\\Assembly-CSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\PROYECTO\\GameFlyHigh\\GameFlyHigh\\Assembly-CSharp.csproj",
+        "projectUniqueName": "G:\\PROYECTO\\GameFlyHigh\\GameFlyHigh\\Assembly-CSharp.csproj",
         "projectName": "Assembly-CSharp",
-        "projectPath": "F:\\PROYECTO\\GameFlyHigh\\GameFlyHigh\\Assembly-CSharp.csproj",
+        "projectPath": "G:\\PROYECTO\\GameFlyHigh\\GameFlyHigh\\Assembly-CSharp.csproj",
         "packagesPath": "C:\\Users\\TheNicrospro\\.nuget\\packages\\",
-        "outputPath": "F:\\PROYECTO\\GameFlyHigh\\GameFlyHigh\\Temp\\obj\\Debug\\Assembly-CSharp\\",
+        "outputPath": "G:\\PROYECTO\\GameFlyHigh\\GameFlyHigh\\Temp\\obj\\Debug\\Assembly-CSharp\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\TheNicrospro\\AppData\\Roaming\\NuGet\\NuGet.Config"

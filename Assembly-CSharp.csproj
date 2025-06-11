@@ -74,8 +74,10 @@
     <Compile Include="Assets\Scripts\SpawnerPipe.cs" />
     <Compile Include="Assets\Scripts\LoopPlattform.cs" />
     <Compile Include="Assets\Scripts\ScoreAdd.cs" />
+    <Compile Include="Assets\Scripts\SpriteSelector.cs" />
     <Compile Include="Assets\Scripts\FlyPlayer.cs" />
     <Compile Include="Assets\Scripts\LoginRequestDTO.cs" />
+    <Compile Include="Assets\Scripts\SpriteChanger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

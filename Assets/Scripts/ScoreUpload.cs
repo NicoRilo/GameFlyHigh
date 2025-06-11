@@ -24,18 +24,20 @@ public class ScoreUpload : MonoBehaviour
             // Si la solicitud es exitosa, parseamos el puntaje máximo recibido
             int maxScore = int.Parse(request.downloadHandler.text);
 
-            // Puedes guardar este maxScore en algún lado si lo necesitas en el futuro
+            // Guardamos el puntaje máximo en PlayerPrefs
             PlayerPrefs.SetInt("MaxScoreFromServer", maxScore);
             PlayerPrefs.Save();
         }
         else
         {
-            // Si ocurre algún error
             Debug.LogError("Error al obtener el puntaje máximo desde el servidor: " + request.error);
         }
     }
+
+    // Método público para enviar el puntaje actual y el puntaje máximo al servidor
     public void SendScoreToServer(int score, int maxScore)
     {
+        // Obtenemos el nombre del usuario logueado
         string username = PlayerPrefs.GetString("LoggedUser", "");
 
         ScoreRequestDTO scoreRequest = new ScoreRequestDTO(username, score, maxScore);
@@ -43,6 +45,7 @@ public class ScoreUpload : MonoBehaviour
         StartCoroutine(PostScore(jsonData));
     }
 
+    // Coroutine que envía los datos al servidor mediante POST
     private IEnumerator PostScore(string jsonData)
     {
         UnityWebRequest request = new UnityWebRequest("http://localhost:8080/proyecto/scores/add", "POST");
